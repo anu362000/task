@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <script src="contactus.js"></script>
+</head>
+<body>
+    <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+    <div class="container">
+        <div class="row">
+                <form class="awesome-form">
+                    <h2 class="text-center">Contact us</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="fullNameInput" placeholder="Full name" onfocusout="validateFullName();">
+                        <p id="fullNameError" class="error-message"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="emailInput" name="Email" class="form-control" placeholder="Email ID" required onfocusout="validateEmail();"></div><br>
+                        <p id="EmailError" class="error-message"></p>
+                        <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone number" onfocusout="validatePhoneNumber();">
+                        <p id="phoneError" class="error-message"></p>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="messageInput" placeholder="Your message..." onfocusout="validateMessage();"></textarea>
+                        <p id="messageError" class="error-message"></p>
+                    </div>
+                    <button type="button" id="myButton" class="btn btn-block btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <iframe src="footer.html" frameborder="0" scrolling="no" width="100%" height="100"></iframe>
+</body>
+</html>
